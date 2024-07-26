@@ -1,11 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello, world!</h1>
-</body>
-</html>
+@import url("test.css");
+
+body {
+  background: #000;
+}
+
+p,
+h1 {
+  color: #fff;
+  font-family: "Arial";
+}
+
+button,
+p,
+h1 {
+  user-select: none; /* Предотвращает выделение текста */
+  -webkit-user-select: none; /* Для Safari */
+  -moz-user-select: none; /* Для Firefox */
+  -ms-user-select: none; /* Для IE и Edge */
+  -o-user-select: none; /* Для старых версий Opera */
+}
+
+button {
+  border-radius: 100px;
+}
+
+button.red {
+  background-color: transparent;
+  border: 1px solid #ff0000;
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 1s, color 1s, transform 1s, box-shadow 1s,
+    text-shadow 1s;
+
+  box-shadow: 0 0 1px #ff0000, 0 0 2px #ff0000, 0 0 4px #ff0000;
+  text-shadow: 0 0 2px #ffffff;
+}
+
+button.red:active {
+  transform: scale(1.1);
+  background-color: #ff0000;
+
+  /*transition: background-color 1s, color 1s, transform 1s, box-shadow 1s,
+    text-shadow 1s;*/
+}
+
+button.red:hover {
+  transform: scale(1.04); /* Увеличение кнопки при наведении */
+  box-shadow: 0 0 5px #ff0000, 0 0 20px #ff0000, 0 0 15px #ff0000;
+  text-shadow: 0 0 10px #ffffff;
+}
+
+button.white {
+  border-radius: 25px;
+  background-color: transparent;
+  border: 0px solid #fff;
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 1s, color 1s, transform 1s, box-shadow 1s,
+    text-shadow 1s;
+
+  box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff;
+  text-shadow: 0 0 2px #ffffff;
+}
+
+button.white:hover {
+  transform: scale(1.04); /* Увеличение кнопки при наведении */
+  box-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 15px #fff;
+  text-shadow: 0 0 10px #ffffff;
+}
